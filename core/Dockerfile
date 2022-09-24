@@ -16,7 +16,7 @@ RUN apt-get install -y busybox-static bash-static fakeroot git kpartx netcat-ope
 # for binwalk
 # bypass tzdata interaction
 ENV DEBIAN_FRONTEND=noninteractive
-RUN wget https://github.com/ReFirmLabs/binwalk/archive/refs/tags/v2.3.3.tar.gz && \
+RUN wget https://nextcloud.local.rangerdanger.dev/s/4SLwMC9nSJtF6i7/download/v2.3.3.tar.gz && \
     tar -xf v2.3.3.tar.gz && \
     cd binwalk-2.3.3 && \
     echo y | ./deps.sh && \
